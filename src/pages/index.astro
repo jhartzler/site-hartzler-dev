@@ -348,19 +348,54 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     }
 
     // ── Typewriter ────────────────────────────────────────
-    const typeTarget = 'Full Stack Software Engineer';
+    const phrases = [
+      'Full Stack Software Engineer',
+      'Mentor \u00b7 Builder \u00b7 Volunteer',
+      'Product Engineer',
+      'Husband, Father, Barista',
+    ];
     const typeEl = document.getElementById('typewriter-text')!;
     const typeCursor = document.querySelector('.typewriter-cursor') as HTMLElement;
-    let i = 0;
-    const type = () => {
-      if (i < typeTarget.length) {
-        typeEl.textContent += typeTarget[i++];
-        setTimeout(type, 55);
-      } else {
-        typeCursor.classList.add('typewriter-cursor--done');
-      }
+    let phraseIdx = 0;
+
+    const typePhrase = (text: string, onDone: () => void) => {
+      let i = 0;
+      const tick = () => {
+        if (i < text.length) {
+          typeEl.textContent += text[i++];
+          setTimeout(tick, 55);
+        } else {
+          onDone();
+        }
+      };
+      tick();
     };
-    setTimeout(type, 700);
+
+    const deletePhrase = (onDone: () => void) => {
+      const tick = () => {
+        const current = typeEl.textContent || '';
+        if (current.length > 0) {
+          typeEl.textContent = current.slice(0, -1);
+          setTimeout(tick, 30);
+        } else {
+          onDone();
+        }
+      };
+      tick();
+    };
+
+    const loop = () => {
+      typePhrase(phrases[phraseIdx], () => {
+        setTimeout(() => {
+          deletePhrase(() => {
+            phraseIdx = (phraseIdx + 1) % phrases.length;
+            setTimeout(loop, 400);
+          });
+        }, 2000);
+      });
+    };
+
+    setTimeout(loop, 700);
 
     // ── Section number count-up ───────────────────────────
     const sectionHeaders = document.querySelectorAll<HTMLElement>('.section-header');
