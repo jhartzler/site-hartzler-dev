@@ -303,7 +303,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         photoSepia.style.webkitMaskImage = mask;
 
         if (growing && radius < 600) {
-          radius += 3;
+          const progress = radius / 600;
+          const ease = 1 - progress * progress;
+          radius += 5 * ease + 0.5;
           raf = requestAnimationFrame(updateMask);
         } else {
           raf = null;
