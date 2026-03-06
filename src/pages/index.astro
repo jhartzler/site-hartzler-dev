@@ -17,28 +17,28 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <nav>
     <div class="nav-logo">hartzler<span>.dev</span></div>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#tech">Tech</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#resume">Resume</a></li>
+      <li><a href="#tech">Tech</a></li>
+      <li><a href="#about">About</a></li>
     </ul>
   </nav>
 
   <!-- TICKER -->
   <div class="ticker-bar">
     <div class="ticker-track">
-      <span class="ticker-item">Software Developer</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Youth Worker</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Full Stack Engineer</span><span class="ticker-dot">✦</span>
       <span class="ticker-item">Ruby on Rails</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">hartzler.dev</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Builder of Things</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Person of Faith</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Software Developer</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Youth Worker</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">TypeScript</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Mentor</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Fintech &amp; SaaS</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Volunteer</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Full Stack Engineer</span><span class="ticker-dot">✦</span>
       <span class="ticker-item">Ruby on Rails</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">hartzler.dev</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Builder of Things</span><span class="ticker-dot">✦</span>
-      <span class="ticker-item">Person of Faith</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">TypeScript</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Mentor</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Fintech &amp; SaaS</span><span class="ticker-dot">✦</span>
+      <span class="ticker-item">Volunteer</span><span class="ticker-dot">✦</span>
     </div>
   </div>
 
@@ -50,8 +50,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         Jack<br />
         <span class="line2">Hartzler.</span>
       </h1>
-      <div class="hero-title">Software Developer &amp; Builder</div>
-      <p class="hero-desc">I build software that brings people together — from production web apps to party games for youth groups. Code is my craft; community is my calling.</p>
+      <div class="hero-title"><span id="typewriter-text"></span><span class="typewriter-cursor">▌</span></div>
+        <p class="hero-desc">Hi, I'm Jack. At work, I build software that people depend on to do their jobs. Currently, that means loan officers processing auto refi's and lender integrations to get our customers the best possible rates. In the past, I worked on enterprise SaaS for some of the largest customer experience teams in the world. I love backend coding but I'm comfortable the whole way up and down the stack. Off work, I'm a longtime volunteer mentor for college students and teens — and that's why I'm building RoomRally, a party game platform for in-person connection between young people and the adults who support them.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">See My Work</a>
         <a href="#resume" class="btn btn-secondary">View Resume</a>
@@ -59,113 +59,54 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     </div>
     <div class="hero-right">
       <div class="photo-frame">
-        <img src="/profilepic.jpeg" alt="Jack Hartzler" />
+        <img src="/profilepic.png" alt="Jack Hartzler" class="photo-color" />
+        <img src="/profilepic.png" alt="" class="photo-sepia" aria-hidden="true" />
       </div>
       <div class="hero-bg-text" id="ghostLetter">J</div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="section-header" data-num="01">
-      <span class="section-num">01 /</span>
-      <h2 class="section-title"><span class="section-title-accent">About Me</span></h2>
-    </div>
-    <div class="about-grid">
-      <div class="about-card">
-        <div class="about-card-icon">✝</div>
-        <div class="about-card-label">Faith &amp; Community</div>
-        <h3>Rooted in Purpose</h3>
-        <p>My faith shapes how I work and why I build. I'm actively involved in my local church and find real joy in serving and leading others toward something bigger than themselves.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">👨‍👩‍👧</div>
-        <div class="about-card-label">Family</div>
-        <h3>Husband &amp; Father</h3>
-        <p>Family comes first. My wife and kids keep me grounded and remind me that the best projects are the ones where real people show up, laugh, and go home better than they arrived.</p>
-      </div>
-      <div class="about-card">
-        <div class="about-card-icon">🏕</div>
-        <div class="about-card-label">Volunteering</div>
-        <h3>Youth Work</h3>
-        <p>I spend my weekends with teenagers — mentoring, running camps, and yes, building the occasional chaotic party game. Young people deserve adults who invest in them without an agenda.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH -->
-  <section id="tech" class="hatch">
-    <div class="section-header" data-num="02">
-      <span class="section-num">02 /</span>
-      <h2 class="section-title"><span class="section-title-accent">Technologies</span></h2>
-    </div>
-    <div class="tech-grid">
-      <div class="tech-tag"><span class="dot"></span>Ruby on Rails</div>
-      <div class="tech-tag"><span class="dot"></span>Turbo Streams</div>
-      <div class="tech-tag"><span class="dot"></span>JavaScript</div>
-      <div class="tech-tag"><span class="dot"></span>Hotwire</div>
-      <div class="tech-tag"><span class="dot"></span>PostgreSQL</div>
-      <div class="tech-tag"><span class="dot"></span>Redis</div>
-      <div class="tech-tag"><span class="dot"></span>HTML / CSS</div>
-      <div class="tech-tag"><span class="dot"></span>Tailwind CSS</div>
-      <div class="tech-tag"><span class="dot"></span>Astro</div>
-      <div class="tech-tag"><span class="dot"></span>React</div>
-      <div class="tech-tag"><span class="dot"></span>Git</div>
-      <div class="tech-tag"><span class="dot"></span>Docker</div>
-      <div class="tech-tag"><span class="dot"></span>Linux</div>
-      <div class="tech-tag"><span class="dot"></span>REST APIs</div>
-      <div class="tech-tag"><span class="dot"></span>WebSockets</div>
-      <div class="tech-tag"><span class="dot"></span>Stimulus</div>
-    </div>
-  </section>
-
   <!-- PROJECTS -->
   <section id="projects">
-    <div class="section-header" data-num="03">
-      <span class="section-num">03 /</span>
-      <h2 class="section-title"><span class="section-title-accent">Side Projects</span></h2>
+    <div class="section-header" data-num="01">
+      <span class="section-num">01 /</span>
+      <h2 class="section-title"><span class="section-title-accent">Side Project</span></h2>
     </div>
-    <div class="projects-grid">
-      <div class="project-card" data-num="1">
+    <div class="project-feature">
+      <div class="project-feature-main">
         <span class="project-tag">Web App</span>
         <h3>RoomRally</h3>
-        <p>A real-time multiplayer party game platform for youth workers, teachers, and camp counselors. Players join via room codes on their phones while a shared screen drives the action.</p>
+        <p>A real-time multiplayer party game platform for youth workers, teachers, and camp counselors. Players join via room codes on their phones while a shared screen drives the action. Built for safe, moderated use in mixed group settings.</p>
         <div class="project-stack">
           <span class="stack-pill">Rails</span>
           <span class="stack-pill">Turbo Streams</span>
           <span class="stack-pill">WebSockets</span>
           <span class="stack-pill">Redis</span>
-        </div>
-        <a href="#" class="project-link">View Project →</a>
-      </div>
-      <div class="project-card" data-num="2">
-        <span class="project-tag">Game</span>
-        <h3>Comedy Clash</h3>
-        <p>A Quiplash-style prompt game where players submit the funniest answers and vote on the best. Built for safe, moderated use with minors in group settings.</p>
-        <div class="project-stack">
-          <span class="stack-pill">Rails</span>
           <span class="stack-pill">Hotwire</span>
           <span class="stack-pill">Stimulus</span>
         </div>
         <a href="#" class="project-link">View Project →</a>
-      </div>
-      <div class="project-card" data-num="3">
-        <span class="project-tag">In Progress</span>
-        <h3>Think Fast</h3>
-        <p>A Kahoot-style speed trivia game with time-based scoring that rewards fast, correct answers. Real-time leaderboard updates keep the energy high.</p>
-        <div class="project-stack">
-          <span class="stack-pill">Rails</span>
-          <span class="stack-pill">Turbo</span>
-          <span class="stack-pill">PostgreSQL</span>
+        <div class="project-active-badge">
+          <span class="active-dot"></span>
+          Under Active Development — More Coming Soon
         </div>
-        <a href="#" class="project-link">Follow Progress →</a>
       </div>
-      <div class="project-card" data-num="4">
-        <span class="project-tag">Coming Soon</span>
-        <h3>Next Up</h3>
-        <p>The bench is never empty for long. Something new is always taking shape.</p>
-        <div class="project-stack">
-          <span class="stack-pill">TBD</span>
+      <div class="project-feature-games">
+        <div class="games-label">Features</div>
+        <div class="game-item">
+          <div class="game-item-status live">Live</div>
+          <h4>Comedy Clash</h4>
+          <p>A Quiplash-style prompt game where players submit the funniest answers and vote on the best.</p>
+        </div>
+        <div class="game-item">
+          <div class="game-item-status live">Live</div>
+          <h4>Think Fast!</h4>
+          <p>A Kahoot-style speed trivia game with time-based scoring and real-time leaderboards.</p>
+        </div>
+        <div class="game-item">
+          <div class="game-item-status live">Live</div>
+          <h4>AI Game Content Generation</h4>
+          <p>Create a fully themed game in one click. LLM integration generates custom prompts, questions, and content so hosts can spin up a unique experience in seconds.</p>
         </div>
       </div>
     </div>
@@ -173,8 +114,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 
   <!-- RESUME -->
   <section id="resume">
-    <div class="section-header" data-num="04">
-      <span class="section-num">04 /</span>
+    <div class="section-header" data-num="02">
+      <span class="section-num">02 /</span>
       <h2 class="section-title"><span class="section-title-accent">Experience</span></h2>
     </div>
     <div class="resume-inner">
@@ -182,54 +123,141 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <h3>Work History</h3>
         <div class="resume-item">
           <div class="resume-item-header">
-            <h4>Senior Software Developer</h4>
+            <h4>Full Stack Software Engineer</h4>
             <span class="resume-item-date">2022 – Present</span>
           </div>
-          <div class="resume-item-org">Your Company Name</div>
+          <div class="resume-item-org">Caribou Financial</div>
           <ul>
-            <li>Led migration of legacy system to Rails 7 with Hotwire</li>
-            <li>Reduced page load time by 40% through query optimization</li>
-            <li>Mentored two junior developers on team</li>
+            <li>Designed a product discount feature in Rails generating $7k+ revenue weekly while simplifying the DB schema</li>
+            <li>Built Auth0 integrations for customers and business partners to securely access internal systems</li>
+            <li>Created API caches in TypeScript/Node to store vendor requests and responses, preventing outages when 3rd-party services go down</li>
+            <li>Patched security vulns across multiple services to unblock SOC2 compliance; wrote the playbook for other engineers to follow</li>
+            <li>Only non-staff engineer selected for a pilot tier-2 support rotation</li>
           </ul>
         </div>
         <div class="resume-item">
           <div class="resume-item-header">
-            <h4>Software Developer</h4>
-            <span class="resume-item-date">2019 – 2022</span>
+            <h4>Software Engineer II</h4>
+            <span class="resume-item-date">2020 – 2022</span>
           </div>
-          <div class="resume-item-org">Previous Company</div>
+          <div class="resume-item-org">Medallia</div>
           <ul>
-            <li>Built and maintained customer-facing Rails applications</li>
-            <li>Integrated third-party payment and notification APIs</li>
-            <li>Owned CI/CD pipeline improvements</li>
+            <li>Built REST and GraphQL APIs in Java for Medallia's core enterprise SaaS product</li>
+            <li>Became the go-to engineer for critical business logic areas while simplifying the domain</li>
+            <li>Part of on-call rotation to fix customer issues and ship hotfixes</li>
           </ul>
         </div>
       </div>
       <div class="resume-col">
-        <h3>Key Achievements</h3>
+        <h3>Earlier Experience</h3>
         <div class="resume-item">
           <div class="resume-item-header">
-            <h4>RoomRally Launch</h4>
-            <span class="resume-item-date">2024</span>
+            <h4>Software Engineer</h4>
+            <span class="resume-item-date">2019 – 2020</span>
           </div>
-          <div class="resume-item-org">Personal Project</div>
+          <div class="resume-item-org">Potomac IT Group</div>
           <ul>
-            <li>Designed full real-time multiplayer game architecture</li>
-            <li>Built content moderation system for safe use with minors</li>
-            <li>Shipped 3 game modes with extensible strategy pattern</li>
+            <li>Contributed to a new web app on Angular / Tomcat / Java</li>
+            <li>Mentored new engineers through code reviews and pair programming</li>
           </ul>
         </div>
         <div class="resume-item">
           <div class="resume-item-header">
-            <h4>Education</h4>
+            <h4>Software Engineer</h4>
+            <span class="resume-item-date">2017 – 2019</span>
           </div>
-          <div class="resume-item-org">Your Degree · Your School</div>
+          <div class="resume-item-org">CA Technologies</div>
           <ul>
-            <li>Add your academic background here</li>
+            <li>Led a CLI plugin from proof-of-concept to production release in Node.js</li>
+            <li>Built features for an on-prem B2B resource monitoring web app in Angular</li>
           </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4>Software Engineer</h4>
+            <span class="resume-item-date">2016 – 2017</span>
+          </div>
+          <div class="resume-item-org">Madcap Software</div>
+          <ul>
+            <li>Developed new features for a technical writing tool including a responsive content resizer</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4>B.S. Computer Science</h4>
+            <span class="resume-item-date">2016</span>
+          </div>
+          <div class="resume-item-org">UC San Diego</div>
         </div>
         <div style="margin-top: 2rem;">
           <a href="#" class="btn btn-primary">Download Resume PDF</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH -->
+  <section id="tech" class="hatch">
+    <div class="section-header" data-num="03">
+      <span class="section-num">03 /</span>
+      <h2 class="section-title"><span class="section-title-accent">Technologies</span></h2>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-tag"><span class="dot"></span>Ruby on Rails</div>
+      <div class="tech-tag"><span class="dot"></span>Hotwire</div>
+      <div class="tech-tag"><span class="dot"></span>TypeScript</div>
+      <div class="tech-tag"><span class="dot"></span>HTML / CSS</div>
+      <div class="tech-tag"><span class="dot"></span>PostgreSQL</div>
+      <div class="tech-tag"><span class="dot"></span>REST API Design</div>
+      <div class="tech-tag"><span class="dot"></span>GraphQL</div>
+      <div class="tech-tag"><span class="dot"></span>Node.js</div>
+      <div class="tech-tag"><span class="dot"></span>Java</div>
+      <div class="tech-tag"><span class="dot"></span>Spring</div>
+      <div class="tech-tag"><span class="dot"></span>Docker</div>
+      <div class="tech-tag"><span class="dot"></span>Kafka</div>
+      <div class="tech-tag"><span class="dot"></span>Terraform</div>
+      <div class="tech-tag"><span class="dot"></span>DataDog</div>
+      <div class="tech-tag"><span class="dot"></span>Elastic</div>
+      <div class="tech-tag"><span class="dot"></span>Unix / Bash</div>
+      <div class="tech-tag"><span class="dot"></span>Claude Code</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="section-header" data-num="04">
+      <span class="section-num">04 /</span>
+      <h2 class="section-title"><span class="section-title-accent">About Me</span></h2>
+    </div>
+    <div class="about-layout">
+      <div class="about-bio">
+        <div class="about-bio-label">The Long Version</div>
+<p>Nice to meet you! I'm a dude from SoCal who learned to code a little bit at UCSD. Since then, I've worked as a developer my whole career, and learned to code a lot bit. Right now I work at <a href="https://caribou.com">Caribou Financial</a>. We fix bad car loans!</p>
+          <p>Throughout my career, I've also always volunteered as a mentor for younger people - college students, teens, and kids. I believe that every young person needs loving, stable, adult mentors in their lives. I was fortunate to have many growing up, and now I get to pay it forward to others. </p>
+          <p>That mission has taken me to several states - Pittsburgh, Pennsylvania, where I met my wife, then the DC area, then to Ohio to help start a group at 'the' Ohio State University, and most recently back to the DC area. Come hang out with me at the monuments or in downtown Vienna!</p>
+        <p>When I'm not coding or volunteering, I'm probably making coffee, grilling something, or trying to convince my wife we need another dog.</p>
+      </div>
+      <div class="about-funfacts">
+        <div class="about-funfacts-label">Fun Facts</div>
+        <div class="funfact">
+          <span class="funfact-icon">☕</span>
+          <p>I once made 15 gallons of cold brew at once for a fundraiser</p>
+        </div>
+        <div class="funfact">
+          <span class="funfact-icon">✝</span>
+          <p>Faith &amp; community drive everything I do — at work, at home, and in between</p>
+        </div>
+        <div class="funfact">
+          <span class="funfact-icon">👨‍👩‍👧</span>
+          <p>Husband and father first, software engineer second</p>
+        </div>
+        <div class="funfact">
+          <span class="funfact-icon">🏕</span>
+          <p>10+ years volunteering with teenagers at camps, retreats, and weekly hangouts</p>
+        </div>
+        <div class="funfact">
+          <span class="funfact-icon">🎮</span>
+          <p>Built my first "game" in a college dorm room with zero frontend skills</p>
         </div>
       </div>
     </div>
@@ -241,23 +269,67 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <ul class="footer-links">
         <li><a href="https://github.com/jhartzler">GitHub</a></li>
       <li><a href="https://www.linkedin.com/in/jack-hartzler/">LinkedIn</a></li>
+      <li><a id="email-link" href="#">Email</a></li>
     </ul>
     <div class="footer-copy">© 2026 hartzler.dev</div>
   </footer>
 
   <script>
-    // Custom cursor
+    // ── Custom cursor ─────────────────────────────────────
     const cursor = document.getElementById('cursor')!;
     document.addEventListener('mousemove', e => {
       cursor.style.left = e.clientX + 'px';
       cursor.style.top  = e.clientY + 'px';
     });
-    document.querySelectorAll('a, button, .tech-tag, .about-card, nav ul li a').forEach(el => {
+    document.querySelectorAll('a, button, .tech-tag, .funfact, .game-item, nav ul li a').forEach(el => {
       el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
       el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
     });
 
-    // Subtle parallax on ghost letter
+    // ── Photo sepia reveal ────────────────────────────────
+    const photoFrame = document.querySelector('.photo-frame') as HTMLElement | null;
+    const photoSepia = document.querySelector('.photo-sepia') as HTMLElement | null;
+    if (photoFrame && photoSepia) {
+      let radius = 70;
+      let x = 0, y = 0;
+      let growing = false;
+      let raf: number | null = null;
+
+      const updateMask = () => {
+        const feather = radius + 20;
+        const mask = `radial-gradient(circle at ${x}px ${y}px, transparent 0px, transparent ${radius}px, black ${feather}px)`;
+        photoSepia.style.maskImage = mask;
+        photoSepia.style.webkitMaskImage = mask;
+
+        if (growing && radius < 600) {
+          radius += 3;
+          raf = requestAnimationFrame(updateMask);
+        } else {
+          raf = null;
+        }
+      };
+
+      photoFrame.addEventListener('mousemove', (e: MouseEvent) => {
+        const rect = photoFrame.getBoundingClientRect();
+        x = e.clientX - rect.left;
+        y = e.clientY - rect.top;
+        if (!growing) {
+          growing = true;
+          radius = 70;
+        }
+        if (!raf) raf = requestAnimationFrame(updateMask);
+      });
+
+      photoFrame.addEventListener('mouseleave', () => {
+        growing = false;
+        radius = 70;
+        if (raf) { cancelAnimationFrame(raf); raf = null; }
+        photoSepia.style.maskImage = '';
+        photoSepia.style.webkitMaskImage = '';
+      });
+    }
+
+    // ── Parallax ghost letter ──────────────────────────────
     const ghost = document.getElementById('ghostLetter') as HTMLElement | null;
     const heroRight = ghost?.closest('.hero-right') as HTMLElement | null;
     if (heroRight && ghost) {
@@ -271,6 +343,77 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         ghost.style.transform = '';
       });
     }
+
+    // ── Typewriter ────────────────────────────────────────
+    const typeTarget = 'Full Stack Software Engineer';
+    const typeEl = document.getElementById('typewriter-text')!;
+    const typeCursor = document.querySelector('.typewriter-cursor') as HTMLElement;
+    let i = 0;
+    const type = () => {
+      if (i < typeTarget.length) {
+        typeEl.textContent += typeTarget[i++];
+        setTimeout(type, 55);
+      } else {
+        typeCursor.classList.add('typewriter-cursor--done');
+      }
+    };
+    setTimeout(type, 700);
+
+    // ── Section number count-up ───────────────────────────
+    const sectionHeaders = document.querySelectorAll<HTMLElement>('.section-header');
+    sectionHeaders.forEach(h => {
+      h.dataset.target = h.dataset.num!;
+      h.dataset.num = '00';
+    });
+    const numObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const header = entry.target as HTMLElement;
+        const target = parseInt(header.dataset.target!);
+        let current = 0;
+        const tick = setInterval(() => {
+          current++;
+          header.dataset.num = current.toString().padStart(2, '0');
+          if (current >= target) clearInterval(tick);
+        }, 80);
+        numObserver.unobserve(header);
+      });
+    }, { threshold: 0.4 });
+    sectionHeaders.forEach(h => numObserver.observe(h));
+
+    // ── Obfuscated email ──────────────────────────────────
+    const _u = ['j','a','c','k'].join('');
+    const _d = ['h','a','r','t','z','l','e','r','.','d','e','v'].join('');
+    const _e = _u + '@' + _d;
+    const emailLink = document.getElementById('email-link');
+    if (emailLink) {
+      emailLink.setAttribute('href', 'mai' + 'lto:' + _e);
+    }
+
+    // ── Console easter egg ────────────────────────────────
+    console.log(
+      '%c     ██╗  █████╗  ██████╗ ██╗  ██╗\n' +
+      '     ██║ ██╔══██╗ ██╔════╝ ██║ ██╔╝\n' +
+      '     ██║ ███████║ ██║      █████╔╝ \n' +
+      '██   ██║ ██╔══██║ ██║      ██╔═██╗ \n' +
+      '╚█████╔╝ ██║  ██║ ╚██████╗ ██║  ██╗\n' +
+      ' ╚════╝  ╚═╝  ╚═╝  ╚═════╝ ╚═╝  ╚═╝',
+      'color:#c4622d;font-family:monospace;font-size:11px;line-height:1.5'
+    );
+    console.log(
+      '%c██╗  ██╗  █████╗  ██████╗  ████████╗███████╗ ██╗      ███████╗ ██████╗ \n' +
+      '██║  ██║ ██╔══██╗ ██╔══██╗ ╚══██╔══╝╚════██║ ██║      ██╔════╝ ██╔══██╗\n' +
+      '███████║ ███████║ ██████╔╝    ██║       ██╔╝  ██║      █████╗   ██████╔╝\n' +
+      '██╔══██║ ██╔══██║ ██╔══██╗    ██║      ██╔╝   ██║      ██╔══╝   ██╔══██╗\n' +
+      '██║  ██║ ██║  ██║ ██║  ██║    ██║     ██████╗ ███████╗ ███████╗ ██║  ██║\n' +
+      '╚═╝  ╚═╝ ╚═╝  ╚═╝ ╚═╝  ╚═╝    ╚═╝     ╚═════╝ ╚══════╝ ╚══════╝ ╚═╝  ╚═╝',
+      'color:#d4956a;font-family:monospace;font-size:11px;line-height:1.5'
+    );
+    console.log(
+      '%cCaught you looking at devtools. 👀\nHope you enjoyed the site — let\'s connect!\n%c→ ' + _e,
+      'color:#8a7355;font-family:monospace;font-size:13px;line-height:1.8',
+      'color:#c4622d;font-family:monospace;font-size:13px;font-weight:bold'
+    );
   </script>
 
 </body>
@@ -486,7 +629,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .hero-desc {
     font-size: 1.05rem;
     line-height: 1.75;
-    max-width: 38ch;
+    max-width: 56ch;
     color: var(--ink);
     opacity: 0.8;
   }
@@ -519,8 +662,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   .photo-frame {
-    width: 280px;
-    height: 360px;
+    width: 340px;
+    height: 420px;
     border: 4px solid var(--gold);
     position: relative;
     z-index: 1;
@@ -534,6 +677,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     object-fit: cover;
     object-position: center top;
     display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .photo-color {
+    filter: none;
+  }
+  .photo-sepia {
+    filter: sepia(0.6) saturate(1.8) hue-rotate(-15deg) brightness(0.92);
   }
 
   /* big ghost letter */
@@ -637,46 +789,83 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   }
 
   /* ─── ABOUT ─────────────────────────────── */
-  .about-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; }
+  .about-layout {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+  }
 
-  .about-card {
-    padding: 2.5rem 3rem;
+  .about-bio {
+    padding: 3rem;
     border-right: var(--border);
-    transition: background 0.15s;
     position: relative;
   }
-  .about-card:last-child { border-right: none; }
-  .about-card:hover { background: var(--gold-pale); }
-
-  .about-card::before {
+  .about-bio::before {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 4px;
+    background: var(--olive);
   }
-  .about-card:nth-child(1)::before { background: var(--gold); }
-  .about-card:nth-child(2)::before { background: var(--olive); }
-  .about-card:nth-child(3)::before { background: var(--moss); }
-
-  .about-card-icon { font-size: 2rem; margin-bottom: 1rem; }
-  .about-card-label {
+  .about-bio-label {
     font-family: 'DM Mono', monospace;
     font-size: 0.7rem;
     text-transform: uppercase;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.15em;
     color: var(--olive);
-    margin-bottom: 0.75rem;
+    margin-bottom: 2rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--olive);
   }
-  .about-card h3 {
-    font-family: 'Fraunces', serif;
-    font-size: 1.4rem;
-    font-weight: 700;
-    margin-bottom: 0.75rem;
-    letter-spacing: -0.02em;
+  .about-bio p {
+    font-size: 1rem;
+    line-height: 1.8;
+    opacity: 0.8;
+    margin-bottom: 1.25rem;
+    max-width: 52ch;
   }
-  .about-card p {
-    font-size: 0.95rem;
-    line-height: 1.7;
+  .about-bio p:last-child { margin-bottom: 0; }
+
+  .about-funfacts {
+    padding: 3rem;
+    background: var(--cream);
+    position: relative;
+  }
+  .about-funfacts::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--gold);
+  }
+  .about-funfacts-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--olive);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--olive);
+  }
+  .funfact {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(22,18,8,0.08);
+    transition: background 0.12s;
+  }
+  .funfact:last-child { border-bottom: none; }
+  .funfact:hover { background: var(--gold-pale); margin: 0 -1rem; padding-left: 1rem; padding-right: 1rem; }
+  .funfact-icon {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+    width: 2rem;
+    text-align: center;
+  }
+  .funfact p {
+    font-size: 0.9rem;
+    line-height: 1.5;
     opacity: 0.75;
   }
 
@@ -715,51 +904,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .tech-tag:hover .dot { background: var(--gold-pale); }
 
   /* ─── PROJECTS ──────────────────────────── */
-  .projects-grid { display: grid; grid-template-columns: 1fr 1fr; }
+  .project-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-  .project-card {
+  .project-feature-main {
     padding: 3rem;
     border-right: var(--border);
-    border-bottom: var(--border);
     position: relative;
     overflow: hidden;
-    transition: background 0.15s;
+    display: flex;
+    flex-direction: column;
   }
-  .project-card:nth-child(even) { border-right: none; }
-  .project-card:nth-last-child(-n+2) { border-bottom: none; }
-  .project-card:hover { background: var(--cream); }
-
-  /* large ghost number */
-  .project-card::before {
-    content: attr(data-num);
+  .project-feature-main::before {
+    content: 'RR';
     position: absolute;
     top: 0.5rem; right: 1.5rem;
     font-family: 'Fraunces', serif;
-    font-size: 6rem;
+    font-size: 8rem;
     font-weight: 700;
     font-style: italic;
     color: rgba(196,98,45,0.06);
     line-height: 1;
     pointer-events: none;
-    transition: color 0.15s;
   }
-  .project-card:hover::before { color: rgba(196,98,45,0.12); }
-
-  /* hatch stripe on right edge */
-  .project-card::after {
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    width: 8px; height: 100%;
-    background: repeating-linear-gradient(
-      -45deg,
-      transparent, transparent 3px,
-      rgba(196,98,45,0.15) 3px, rgba(196,98,45,0.15) 4px
-    );
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-  .project-card:hover::after { opacity: 1; }
 
   .project-tag {
     display: inline-block;
@@ -768,22 +937,20 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     text-transform: uppercase;
     letter-spacing: 0.12em;
     padding: 0.25rem 0.6rem;
-    background: var(--olive);
+    background: var(--moss);
     color: var(--cream);
     margin-bottom: 1rem;
   }
-  .project-card[data-num="1"] .project-tag { background: var(--moss); }
-  .project-card[data-num="3"] .project-tag { background: var(--gold); color: var(--ink); }
 
-  .project-card h3 {
+  .project-feature-main h3 {
     font-family: 'Fraunces', serif;
-    font-size: 1.9rem;
+    font-size: 2.4rem;
     font-weight: 700;
     letter-spacing: -0.02em;
     margin-bottom: 0.75rem;
     line-height: 1.1;
   }
-  .project-card p {
+  .project-feature-main p {
     font-size: 0.95rem;
     line-height: 1.7;
     opacity: 0.75;
@@ -813,6 +980,77 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     transition: color 0.15s, border-color 0.15s;
   }
   .project-link:hover { color: var(--moss); border-color: var(--moss); }
+
+  .project-active-badge {
+    margin-top: auto;
+    padding: 0.9rem 1.2rem;
+    background: var(--gold-pale);
+    border: 2px solid var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    color: var(--warm-mid);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .active-dot {
+    width: 8px;
+    height: 8px;
+    background: var(--olive);
+    border-radius: 50%;
+    flex-shrink: 0;
+    animation: pulse-dot 2s ease-in-out infinite;
+  }
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  /* Games sidebar */
+  .project-feature-games {
+    padding: 2rem 3rem;
+    background: var(--cream);
+  }
+  .games-label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: var(--olive);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--olive);
+  }
+  .game-item {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid rgba(22,18,8,0.1);
+  }
+  .game-item:last-child { border-bottom: none; }
+  .game-item-status {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding: 0.15rem 0.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  .game-item-status.live { background: var(--olive); color: var(--cream); }
+  .game-item-status.wip { background: var(--gold); color: var(--ink); }
+  .game-item-status.soon { background: var(--gold-pale); color: var(--warm-mid); }
+  .game-item h4 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.35rem;
+  }
+  .game-item p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    opacity: 0.65;
+  }
 
   /* ─── RESUME ────────────────────────────── */
   #resume .resume-inner {
@@ -926,6 +1164,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     position: relative;
   }
 
+  /* ─── TYPEWRITER CURSOR ─────────────────── */
+  .typewriter-cursor {
+    display: inline-block;
+    color: var(--olive);
+    animation: blink 0.9s step-end infinite;
+    margin-left: 1px;
+  }
+  .typewriter-cursor--done {
+    animation: blink 1.2s step-end infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50%       { opacity: 0; }
+  }
+
   /* ─── LOAD ANIMATIONS ───────────────────── */
   @keyframes fade-up {
     from { opacity: 0; transform: translateY(18px); }
@@ -939,5 +1192,5 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   .photo-frame  { animation: fade-up 0.6s ease both 0.35s; }
 
   /* interactive elements get none cursor */
-  a, button, .tech-tag, .project-card, .about-card, nav ul li a { cursor: none; }
+  a, button, .tech-tag, .funfact, .game-item, nav ul li a { cursor: none; }
 </style>
