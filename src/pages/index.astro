@@ -71,7 +71,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   <section id="projects">
     <div class="section-header" data-num="01">
       <span class="section-num">01 /</span>
-      <h2 class="section-title"><span class="section-title-accent">Side Project</span></h2>
+      <h2 class="section-title"><span class="section-title-accent">Side Projects</span></h2>
     </div>
     <div class="project-feature">
       <div class="project-feature-main">
@@ -110,6 +110,25 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <h4>AI Game Content Generation</h4>
           <p>Create a fully themed game in one click. LLM integration generates custom prompts, questions, and content so hosts can spin up a unique experience in seconds.</p>
         </div>
+      </div>
+    </div>
+
+    <!-- Brim Project -->
+    <div class="project-feature brim-project">
+      <div class="project-image-col">
+        <img src="/brim.png" alt="Brim macOS menu bar timer" class="project-image" />
+      </div>
+      <div class="project-feature-main brim-main">
+        <span class="project-tag">macOS App</span>
+        <h3>Brim</h3>
+        <p>People (including me) are much better at estimating size than time. To help gauge how much remains in a task, a visual cue helps a lot. I built Brim as an unobtrusive visual timer that sits at the top of your screen like the brim of a cap — a colored bar that depletes as time runs out, giving you a constant sense of progress without the distraction of numbers. On MacBooks with a notch, the bar even wraps around in a continuous U-shape.</p>
+        <div class="project-stack">
+          <span class="stack-pill">Swift</span>
+          <span class="stack-pill">AppKit</span>
+          <span class="stack-pill">SwiftUI</span>
+          <span class="stack-pill">macOS</span>
+        </div>
+        <a href="https://github.com/jhartzler/brim" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
       </div>
     </div>
   </section>
@@ -353,7 +372,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     const phrases = [
       'Full Stack Software Engineer',
       'Mentor \u00b7 Builder \u00b7 Volunteer',
-      'Product Engineer',
       'Husband, Father, Barista',
     ];
     const typeEl = document.getElementById('typewriter-text')!;
@@ -1090,6 +1108,54 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     font-size: 0.85rem;
     line-height: 1.6;
     opacity: 0.65;
+  }
+
+  /* ─── BRIM PROJECT (SECONDARY) ──────────── */
+  .brim-project {
+    grid-template-columns: 2fr 3fr;
+    background: var(--cream);
+    border-top: var(--border-thick);
+  }
+  .project-image-col {
+    padding: 2rem;
+    border-right: var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--sand);
+  }
+  .project-image {
+    width: 100%;
+    max-width: 440px;
+    border: 3px solid var(--ink);
+    box-shadow: 8px 8px 0 var(--olive);
+    object-fit: cover;
+  }
+  .brim-main {
+    border-right: none;
+  }
+  .brim-main::before {
+    content: '◐';
+    right: 1.5rem;
+    font-size: 6rem;
+    color: rgba(196,98,45,0.08);
+  }
+  .brim-main h3 {
+    font-size: 2rem;
+  }
+
+  @media (max-width: 768px) {
+    .brim-project {
+      grid-template-columns: 1fr;
+    }
+    .project-image-col {
+      border-right: none;
+      border-bottom: var(--border);
+      padding: 1.5rem;
+    }
+    .project-image {
+      max-width: 300px;
+    }
   }
 
   /* ─── RESUME ────────────────────────────── */
