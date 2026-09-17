@@ -1,8 +1,9 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
----
 
+const year = new Date().getFullYear();
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -52,7 +53,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <span class="line2">Hartzler.</span>
       </h1>
       <div class="hero-title"><span id="typewriter-text"></span><span class="typewriter-cursor">▌</span></div>
-        <p class="hero-desc">Hi, I'm Jack. At work, I build software that people depend on to do their jobs. Currently, that means loan officers processing auto refi's and lender integrations to get our customers the best possible rates. In the past, I worked on enterprise SaaS for some of the largest customer experience teams in the world. I love backend coding but I'm comfortable the whole way up and down the stack. Off work, I'm a longtime volunteer mentor for college students and teens — and that's why I'm building RoomRally, a party game platform for in-person connection between young people and the adults who support them.</p>
+        <p class="hero-desc">Hi, I'm Jack. At work, I build software that people depend on to do their jobs. Currently, that means loan officers processing auto refis and lender integrations to get our customers the best possible rates. In the past, I worked on enterprise SaaS for some of the largest customer experience teams in the world. I love backend coding but I'm comfortable the whole way up and down the stack. Off work, I'm a longtime volunteer mentor for college students and teens — and that's why I'm building RoomRally, a party game platform for in-person connection between young people and the adults who support them.</p>
       <div class="hero-ctas">
         <a href="#projects" class="btn btn-primary">See My Work</a>
         <a href="#resume" class="btn btn-secondary">View Resume</a>
@@ -144,8 +145,19 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <h3>Work History</h3>
         <div class="resume-item">
           <div class="resume-item-header">
-            <h4>Full Stack Software Engineer</h4>
-            <span class="resume-item-date">2022 – Present</span>
+            <h4>Senior Software Engineer</h4>
+            <span class="resume-item-date">Jul 2026 – Present</span>
+          </div>
+          <div class="resume-item-org">Caribou Financial</div>
+          <ul>
+            <li>Drove AI adoption in the engineering org through modeling AI engineering practices</li>
+            <li>Integrated with a new vendor for digital contract vaulting, unblocking key lender partnerships</li>
+          </ul>
+        </div>
+        <div class="resume-item">
+          <div class="resume-item-header">
+            <h4>Software Engineer</h4>
+            <span class="resume-item-date">Apr 2022 – Jul 2026</span>
           </div>
           <div class="resume-item-org">Caribou Financial</div>
           <ul>
@@ -153,7 +165,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
             <li>Built Auth0 integrations for customers and business partners to securely access internal systems</li>
             <li>Created API caches in TypeScript/Node to store vendor requests and responses, preventing outages when 3rd-party services go down</li>
             <li>Patched security vulns across multiple services to unblock SOC2 compliance; wrote the playbook for other engineers to follow</li>
-            <li>Only non-staff engineer selected for a pilot tier-2 support rotation</li>
+            <li>Trusted with tier-2 support rotation in a pilot program, typically scoped to Staff+ engineers</li>
           </ul>
         </div>
         <div class="resume-item">
@@ -164,7 +176,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           <div class="resume-item-org">Medallia</div>
           <ul>
             <li>Built REST and GraphQL APIs in Java for Medallia's core enterprise SaaS product</li>
-            <li>Became the go-to engineer for critical business logic areas while simplifying the domain</li>
             <li>Part of on-call rotation to fix customer issues and ship hotfixes</li>
           </ul>
         </div>
@@ -255,7 +266,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
         <div class="about-bio-label">The Long Version</div>
 <p>Nice to meet you! I'm a dude from SoCal who learned to code a little bit at UCSD. Since then, I've worked as a developer my whole career, and learned to code a lot bit more. Right now I work at <a href="https://caribou.com">Caribou Financial</a>. We fix bad car loans!</p>
           <p>Throughout my career, I've also always volunteered as a mentor for younger people - college students, teens, and kids. I believe that every young person needs loving, stable, adult mentors in their lives. I was fortunate to have many growing up, and now I get to pay it forward to others.</p>
-          <p>That mission has taken me to several states - Pittsburgh, Pennsylvania, where I met my wife, then the DC area, then to Ohio to help start a group at 'the' Ohio State University, and most recently back to the DC area. Come hang out with me at the monuments or in downtown Vienna!</p>
+          <p>That mission has taken me to several states - Pittsburgh, Pennsylvania, where I met my wife, then the DC area, then to Ohio to help start a group at The Ohio State University, and most recently back to the DC area. Come hang out with me at the monuments or in downtown Vienna!</p>
           <p>At home, I'm a barista to my amazing wife and jungle gym to two beautiful daughters. I also have a small coffee problem and enjoy roasting, grinding, and brewing all the anaerobically processed Ethiopian and South American coffee I can get my hands on.</p>
           <p>Every word of this bio was written by me. The code is another story... AI is very convenient for that :)</p>
       </div>
@@ -275,7 +286,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
           </div>
            <div class="funfact">
         <span class="funfact-icon">📖</span>
-            <p>My favorite Youtube Channel is the <a href="https://www.youtube.com/@bibleproject">Bible Project</a>. Whether you're Christian or not, they're super engaging and relevant videos about the meaning and history of scripture.</p>
+            <p>My favorite YouTube channel is the <a href="https://www.youtube.com/@bibleproject">Bible Project</a>. Whether you're Christian or not, they're super engaging and relevant videos about the meaning and history of scripture.</p>
         </div>
         <div class="funfact">
           <span class="funfact-icon">🎸</span>
@@ -293,7 +304,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
       <li><a href="https://www.linkedin.com/in/jack-hartzler/">LinkedIn</a></li>
       <li><a id="email-link" href="#">Email</a></li>
     </ul>
-    <div class="footer-copy">© 2026 jack.hartzler.dev</div>
+    <div class="footer-copy">© {year} jack.hartzler.dev</div>
   </footer>
 
   <script>
